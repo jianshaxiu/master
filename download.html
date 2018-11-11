@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="maximum-scale=1,minimum-scale=1,user-scalable=0,width=device-width,initial-scale=1">
+	<title>金沙秀</title>
+</head>
+<style type="text/css">
+   body {
+   	 margin:0;
+   }
+   .gl {
+   	    position: absolute;
+    left: -3px;
+    width: 52px;
+    height: 38px;
+    background-size: 52px 38px;
+   }
+   .jiaobiao{
+   	top:15px;
+   }
+   .jiaobiao1{
+   	top:53px;
+   }
+   .ios {
+    background-image: url(data:image/png;base64,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);
+   }
+   .android{
+    background-image: url(data:image/png;base64,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);
+}
+	.grid-content{
+		    border-radius: 4px;
+            min-height: 200px;
+            background: #409eff;
+           text-align: center;
+	}
+	.applogo {
+		height: 120px;
+    width: 120px;
+    margin-top: 10%;
+    border-radius: 20%;
+    box-shadow: 0 12px 12px 0 rgba(0,0,0,.1);
+   }
+   .build {
+
+   }
+   .smtitle{
+   	color: #fff;
+   	width: 33.33%;
+   	     font-size: 12px;
+   	      color: #fff;
+    line-break: auto;
+    letter-spacing: 1px;
+    
+   }
+   .apptitle{
+   	    color: #fff;
+    line-break: auto;
+    letter-spacing: 1px;
+    font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif;
+    width: 33.33%;
+   	     font-size: 12px;
+
+   }
+
+   .el-button{
+          display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    transition: .1s;
+    font-weight: 500;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+   }   .el-button--medium {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.anquan{
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    width: 52px;
+    height: 52px;
+    background-size: 52px 52px;
+}
+.aqimg {
+    background-image: url(https://www.dafuai.com/static/img/anquan.e066fbc.png);
+}
+   .el-button--primary {
+    color: #fff;
+    background-color: #409eff;
+    border-color: #409eff;
+}
+
+
+	
+</style>
+<body>
+
+	<div style="display: flex;flex-direction: column;">
+		<div class="grid-content"> <div data-v-3a1f9bc0=""><img  src="http://gg-images.oss-cn-shanghai.aliyuncs.com/files/appicon.png" alt="" onerror="this.src='//img.dafuai.com/Icon/dafuai.png'" class="applogo"></div> <div ><span  class="apptitle">金沙秀 <small></small></span></div> <div data-v-3a1f9bc0="" style="width: 100%; margin-top: 10px; padding-bottom: 10px; text-align: center;display: flex;"><div class="smtitle ">2018-11-11 15:15:27</div> <div class="smtitle ">Bulid:(1.3)</div> <div  class="smtitle ">大小:15.8Mb</div></div><span class="gl jiaobiao ios"></span> <span  class="gl jiaobiao1 android"></span> <span  class="anquan aqimg"></span></div>
+		<div style="padding-top: 30px;text-align: center;">
+		<button onclick="download()"  type="button" class="el-button el-button--primary el-button--medium" style="max-width: 60%;"><!----><!----><span>点 击 安 装</span></button>
+
+		<div style="padding-top: 10px;">
+			<img src="http://gg-images.oss-cn-shanghai.aliyuncs.com/files/download_qrcode.png" style="max-width: 60%;">
+			<div style="font-size: 12px;">手机扫一扫二维码保存或扫描</div>
+		</div>
+	  </div>
+	</div>
+
+	<script type="text/javascript">
+		function download(){
+             
+			
+			 if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+  
+                 window.location="itms-services://?action=download-manifest&url=https://gg-images.oss-cn-shanghai.aliyuncs.com/files/app.plist";
+           } else if (/(Android)/i.test(navigator.userAgent)) {
+
+   
+             window.location="https://gg-images.oss-cn-shanghai.aliyuncs.com/files/jsx_1.3.apk";
+           }
+		} 
+	</script>
+
+</body>
+</html>
